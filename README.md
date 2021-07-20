@@ -41,9 +41,25 @@ OBS: Vamos colocar essas variáveis dinamicas quando criarmos nosso useContext.
 
 ![image](https://user-images.githubusercontent.com/67201210/126395413-1a0e9c87-804d-448a-a307-0e6bee6c98f6.png)
 
+Vamo dar um return com o nosso Route e passar nossas propriedades e componentes que configuramos logo a cima.
+
+![image](https://user-images.githubusercontent.com/67201210/126395981-11270937-0465-459f-8c21-004fd94adade.png)
+
+Agora na configuração do index importamos nosso Switch e Route que configuramos anteriormente, juntamente com as páginas que criamos de login, cadastro e dashboard. Lemb rando que a página de dashboard o usuário só poderá acessar se estiver logado no sistema então vamos colocar ela privada com o comando isPrivate, também do react router dom.
+
+![image](https://user-images.githubusercontent.com/67201210/126396432-1eff1000-7e1b-4ffd-94fb-181518da197e.png)
+
+E vamos também configurar na página raíz do nosso projeto o App.js as nossas rotas, e também o nosso estilo global da nossa aplicação.
+
+![image](https://user-images.githubusercontent.com/67201210/126398193-0dbbb8c2-c6a0-4ea5-9246-949f943f7a7b.png)
 
 
+### 💡 Configurando Firebase e o Context API
 
+Terminando de configurar nossas rotas e deixando tudo pronto, agora precisamos conectar o sistema com nosso banco de dados que nesse projeto vai ser o Firebase.
+Vamos criar uma pasta services dentro da nossa pasta src e criar um arquivo chamado firebaseConnection.js que vai fazer a nossa conexão com o banco de dados.
+
+![image](https://user-images.githubusercontent.com/67201210/126400473-dbd0ed8f-3337-49a4-9255-010e39f67298.png)
 
 
 
