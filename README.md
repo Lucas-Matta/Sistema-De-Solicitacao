@@ -12,13 +12,13 @@ TechSup foi um sistema desenvolvido durante um dos treinamentos realizados onlin
 * React
 * JavaScript
 * Firebase
-* SCSS
+* SASS
 
 ***
 
-### 💡 Dando inicio ao Projeto e organizando Rotas
+### <p align="center">💡 Dando inicio ao Projeto e organizando Rotas</p>
 
-Começamos então criando a estrtura do nosso projeto com o template simples do React.
+Começamos então criando a estrutura do nosso projeto com o template simples do React.
 
     npm create-react-app nameproject
     
@@ -59,7 +59,7 @@ E vamos também configurar na página raíz do nosso projeto o App.js as nossas 
 Terminando de configurar nossas rotas e deixando tudo pronto, agora precisamos conectar o sistema com nosso banco de dados que nesse projeto vai ser o Firebase.
 Vamos criar uma pasta services dentro da nossa pasta src e criar um arquivo chamado firebaseConnection.js que vai fazer a nossa conexão com o banco de dados.
 
-![image](https://user-images.githubusercontent.com/67201210/126400473-dbd0ed8f-3337-49a4-9255-010e39f67298.png)
+![image](https://user-images.githubusercontent.com/67201210/126529158-a0d5d2e1-f89b-4524-b5cb-eb56ce97a4bc.png)
 
 
 
