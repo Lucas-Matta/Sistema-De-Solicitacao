@@ -54,12 +54,39 @@ E vamos também configurar na página raíz do nosso projeto o App.js as nossas 
 ![image](https://user-images.githubusercontent.com/67201210/126398193-0dbbb8c2-c6a0-4ea5-9246-949f943f7a7b.png)
 
 
-### 💡 Configurando Firebase e o Context API
+### <p align="center">💡 Configurando Firebase e o Context API</p>
 
 Terminando de configurar nossas rotas e deixando tudo pronto, agora precisamos conectar o sistema com nosso banco de dados que nesse projeto vai ser o Firebase.
 Vamos criar uma pasta services dentro da nossa pasta src e criar um arquivo chamado firebaseConnection.js que vai fazer a nossa conexão com o banco de dados.
 
 ![image](https://user-images.githubusercontent.com/67201210/126529158-a0d5d2e1-f89b-4524-b5cb-eb56ce97a4bc.png)
+
+Com nosso Banco criado vamos criar uma API Context que será a API que vai ter todas as informações do usuário logado, pois vamos precisar ter essas informações em várias partes da nossa aplicação então vamos criar uma totalmente do zero. Na pasta contexts vamos criar o nosso user.js, e importar o que vamos utilizar na nossa API Context.
+OBS: Vamos utilizar uma biblioteca que vai ser os nossos 'alertas' de sucesso, falha, aviso, etc...
+
+    npm install toastify
+
+![image](https://user-images.githubusercontent.com/67201210/126543674-4a0e7c21-9d2d-40e7-9f6b-fcbe73f89989.png)
+
+Na raíz do nosso projeto (App.js) vamos configurar também o toastify
+
+![image](https://user-images.githubusercontent.com/67201210/126544535-3d54d332-f39a-43e5-89a7-ee973a8e330f.png)
+
+Agora vamos configurar todo o nosso contexto criar as funções para logar, cadastrar, deslogar e salvar o usuário no nosso localStorage, para que o usuário não precise logar toda vez que for acessar a aplicação, também vamos criar nossas states que vão ser variáveis que vão sofrer alterações durante a executação do nosso código e também armazenar as informações.
+
+![image](https://user-images.githubusercontent.com/67201210/126546613-865493ec-4c4b-41d5-9369-bb21f2408519.png)
+
+Após isso, vamos dar um return e passar o nosso AuthContext como tag com o (.provider), que vai prover as nossas funções e configurações para os outros componentes do nosso sistema, passando como value nossas funções e váriaveis que os outros componentes da nossa aplicação vão ter acesso. Lembrando também de passar o (children) para ter acesso ao conteúdo dentro do contexto criado. E por último vamos exportar nossa API Context
+
+![image](https://user-images.githubusercontent.com/67201210/126546755-411c2479-bc8e-4ae2-b410-70fa2ced1de0.png)
+
+OBS: As configurações e funções criadas feitas para o funcionamento do sistema estão no (user.js) dentro da pasta contexts. O código está comentado e bem detalhado para verificar como está sendo estruturada cada função.
+
+
+
+
+
+
 
 
 
