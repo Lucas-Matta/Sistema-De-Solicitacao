@@ -82,6 +82,28 @@ Após isso, vamos dar um return e passar o nosso AuthContext como tag com o (.pr
 
 OBS: As configurações e funções criadas feitas para o funcionamento do sistema estão no (user.js) dentro da pasta contexts. O código está comentado e bem detalhado para verificar como está sendo estruturada cada função.
 
+### <p align="center">💡 Configurando a tela de Login</p>
+
+Iniciando com a tela de Login, vamos precisar primeiramente de alguns icones para colocar no layout para isso vamos utilizar uma biblioteca do React. Para colocarmos a biblioteca na nossa aplicação vamos instalar ela com o npm.
+
+    npm install react-icons
+    
+Agora vamos importar o que vamos utilizar na tela de Login, no caso precisamos do nosso estilo, ícones que foram escolhidos para esse projeto, useState para guardarmos e fazermos a autenticação das informações de login (email e senha), o Link do React router dom, useContext para utilizarmos algumas informações da nossa API Context e por fim a nossa API.
+
+![image](https://user-images.githubusercontent.com/67201210/126695897-634827c5-7356-47c7-9031-aff2c932f3da.png)
+
+Com nossas importações feitas, criaremos as nossas states e importamos também as informações que vamos utilizar da nossa API.
+
+![image](https://user-images.githubusercontent.com/67201210/126696369-7ddf56bb-e983-4ae7-9ee6-e9504afa3346.png)
+
+Iremos estruturar agora o nosso HTML e CSS do layout da tela de login. Após a estruturação utilizaremos a função onSubmit para quando o usuário tentar logar, disparar uma função que no caso vai ser a função que vamos criar logo a cima e passar ela no nosso onSubmit. Os ícones vamos utilizar como tags por exemplo <AiTwotoneLock />, passando as propriedades. Logo embaixo dos campos vamos utilizar o Link do React router dom, para mandar o usuário para a tela de cadastrar conta caso ele não tiver uma, e embaixo no botão de acessar vamos colocar um operador ternário com o nosso loadingAuth para monitorar se o usuário está tentando fazer login ou não, e trocar a mensagem do botão dinamicamente.
+
+![image](https://user-images.githubusercontent.com/67201210/126701767-51273d83-36ab-41e7-bc61-c8f775a9f2cc.png)
+
+
+
+
+
 
 
 
