@@ -50,8 +50,7 @@ export default function Dashboard(){
     }, [])
 
     // Carregamento dos chamados no Dashboard
-
-
+    
     // Função responsavel por montar a lista
     async function updateState(snapshot){
         const isCollectionEmpty = snapshot.size === 0;

@@ -7,7 +7,9 @@ export const AuthContext = createContext({});
 
 function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
+    // Vai verificar se o usuário está tentando logar ou criar conta
     const [loadingAuth, setLoadingAuth] = useState(false);
+    // Vai cuidar do carregamento
     const [loading, setLoading] = useState(true);
 
     // Quando o site carregar, Faça essa verificação;
@@ -34,7 +36,7 @@ function AuthProvider({ children }) {
         await firebase.auth().signInWithEmailAndPassword(email, password)
         .then( async (value) => {
             let uid = value.user.uid
-
+            
             const userProfile = await firebase.firestore().collection('users')
             .doc(uid).get();
 
@@ -49,6 +51,7 @@ function AuthProvider({ children }) {
             storageUser(data);
             setLoadingAuth(false);
             toast.success('Bem vindo de volta!');
+            console.log('Esse é o UID' + uid);
 
         })
         .catch((error) => {
