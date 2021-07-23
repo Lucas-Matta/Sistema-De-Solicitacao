@@ -16,11 +16,12 @@ TechSup foi um sistema desenvolvido durante um dos treinamentos realizados onlin
 
 ***
 
+
 ### <p align="center">💡 Dando inicio ao Projeto e organizando Rotas</p>
 
 Começamos então criando a estrutura do nosso projeto com o template simples do React.
 
-    npm create-react-app nameproject
+    npm create-react-app project
     
 Agora vamos criar a estrutura das nossas Rotas da aplicação, pois vamos adicionar um sistema de Login e cadastramento de conta para a segurança do usuário. Para isso iremos utilizar o próprio sistema de rotas do React (React Router Dom).
 
@@ -53,6 +54,7 @@ E vamos também configurar na página raíz do nosso projeto o App.js as nossas 
 
 ![image](https://user-images.githubusercontent.com/67201210/126398193-0dbbb8c2-c6a0-4ea5-9246-949f943f7a7b.png)
 
+***
 
 ### <p align="center">💡 Configurando Firebase e o Context API</p>
 
@@ -82,6 +84,8 @@ Após isso, vamos dar um return e passar o nosso AuthContext como tag com o (.pr
 
 OBS: As configurações e funções criadas feitas para o funcionamento do sistema estão no (user.js) dentro da pasta contexts. O código está comentado e bem detalhado para verificar como está sendo estruturada cada função.
 
+***
+
 ### <p align="center">💡 Configurando a tela de Login</p>
 
 Iniciando com a tela de Login, vamos precisar primeiramente de alguns icones para colocar no layout para isso vamos utilizar uma biblioteca do React. Para colocarmos a biblioteca na nossa aplicação vamos instalar ela com o npm.
@@ -100,9 +104,25 @@ Iremos estruturar agora o nosso HTML e CSS do layout da tela de login. Após a e
 
 ![image](https://user-images.githubusercontent.com/67201210/126701767-51273d83-36ab-41e7-bc61-c8f775a9f2cc.png)
 
+O layout final da tela de Login do usuário;
+
+<p align="center"><img src='https://user-images.githubusercontent.com/67201210/126827618-4737ac69-5030-45c5-9b54-f65817ef790d.png'</p>
 
 
+***
 
+### <p align="center">💡 Configurando a tela de cadastramento</p>
+
+Na tela de cadastramento iremos reaproveitar os elementos da tela de login, mudando apenas alguns detalhes e adicionando uma state nova para armazenar o nome do usuário que está se cadastrando no momento e mudaremos também alguns textos dos botões.
+
+
+ Criando State e adicionando na verificação      |   Adicionando campo nome  
+:-------------------------:|:-------------------------:
+![image](https://user-images.githubusercontent.com/67201210/126830419-d83fa393-db3c-449b-a343-8965d6753c7e.png)  |  ![image](https://user-images.githubusercontent.com/67201210/126830567-584e35b2-4b63-4a6d-9d17-9c76cad4ea51.png)
+
+O layout final da tela de cadastro do usuário;
+
+<p align="center"><img src='https://user-images.githubusercontent.com/67201210/126831305-c9faa977-e387-4fa2-ac96-349c89b973b1.png'</p>
 
 
 
